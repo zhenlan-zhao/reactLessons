@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+.new-component{
+  margin-top: 20px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +39,284 @@
   to {
     transform: rotate(360deg);
   }
+}
+.Comment {
+  margin: 30px 0px;
+}
+.Avatar {
+  width: 100px;
+  height: 100px;
+}
+.UserInfo {
+  background-color: beige;
+  padding: 20px 0;
+}
+.description {
+  margin-top: 10px;
+  font-size: 28px;
+  font-family: emoji;
+  color: cornflowerblue;
+  font-weight: bolder;
+}
+
+.mainContent {
+  font-size: 20px;
+  margin: 20px 0;
+  height: 150px;
+  position: relative;
+}
+
+.mainContent-left {
+  background: lightblue;
+  font-size: 20px;
+  color:green;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  width: 150px;
+  height: 100%;
+}
+.mainContent-right {
+  position: absolute;
+  left: 150px;
+  right: 0;
+  height: 100%;
+}
+.Comment-text {
+  position: relative;
+  background-color: olive;
+  height: 50%;
+}
+.Comment-date {
+  position: relative;
+  background-color: olivedrab;
+  height: 50%;
+}
+.vertivalMiddle {
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.vertivalMiddleHalf {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.twoColums {
+  display: flex;
+  margin: 20px 40px;
+  justify-content: center;
+  align-items: center;
+}
+.singleColom {
+  padding: 5px;
+  width: 50%;
+}
+.singleColom:not(:last-child) {
+  border-right: solid 5px cadetblue ;
+}
+.TimeStamp {
+  max-width: 100px;
+  color: lightslategrey;
+  margin: 0 auto;
+}
+/* 长宽比=5:1的矩形实现 */
+.outerWrapper {
+  margin: 20px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.innerWrapper {
+  background-color: rosybrown;
+  position: relative;
+  width: 100%;
+  padding-bottom: 20%;
+  height: 0;
+}
+.box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+/* 圣杯布局实现 */
+#sbheader, #sbfooter {
+  height: 40px;
+  width: 100%;
+  background-color: seagreen;
+}
+#sbcontainer {
+  padding-left: 200px;
+  padding-right: 150px;
+  height: 100px;
+}
+#sbcontainer .sbcolumn {
+  float: left;
+  position: relative;
+  height: 100%;
+}
+#sbcenter {
+  width: 100%;
+  background-color: tan;
+}
+#sbleft {
+  width: 200px;
+  background-color: yellow;
+  /* margin-left 负值，元素会被拉进对应的方向，百分比基于包含元素的宽度计算 */
+  margin-left: -100%; 
+  right: 200px;
+
+}
+#sbright {
+  width: 150px;
+  /* margin-right负值，后续元素会被拉进本来的方向 */
+  margin-right: -150px;
+  background-color: thistle;
+}
+#sbfooter {
+  clear: both;
+}
+/* 简易圣杯实现 */
+.easyshengbei {
+  margin: 20px 0;
+}
+#esbheader, #esbfooter {
+  height: 40px;
+  width: 100%;
+  background-color: cadetblue;
+}
+#esbcontainer {
+  position: relative;
+  height: 100px;
+}
+#esbcontainer>div {
+  position: absolute;
+  height: 100%;
+}
+#esbleft {
+  width: 200px;
+  left: 0;
+  background-color: coral;
+}
+#esbright {
+  width: 150px;
+  right: 0;
+   background-color: cornflowerblue;
+}
+#esbcenter {
+  left: 200px;
+  right: 150px;
+  background-color: darkgray;
+}
+/* 双飞翼布局 */
+.shuangfeiyi {
+  margin-top: 30px;
+}
+#sfcontainer {
+  min-width: 500px;
+  height: 100px;
+}
+#sfleft {
+  float: left;
+  width: 200px;
+  height: 80%;
+  background: red;
+  margin-left: -100%;
+}
+#sfcenter {
+  float: left;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+#sfcenter #sfinner {
+  margin: 0 200px;
+  height: 100%;
+}
+#sfright {
+  float: left;
+  margin-left: -200px;
+  width: 200px;
+  height: 80%;
+  background-color: blue;
+}
+.BFC {
+  position: relative;
+}
+
+
+.form-submit-button {
+  height: 40px;
+  width: 200px;
+}
+.warning {
+  background-color: red;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+
+  font-size: 14pt;
+  color: white;
+}
+
+.controlled {
+  background-color: cadetblue;
+}
+.uncontrolled{
+  background-color: cornflowerblue;
+}
+
+/* Combination Component */
+.SplitPane {
+  width: 100%;
+  height: 100px;
+}
+
+.SplitPane-left {
+  float: left;
+  width: 30%;
+  height: 100%;
+}
+
+.SplitPane-right {
+  float: left;
+  width: 70%;
+  height: 100%;
+}
+
+.Contacts {
+  width: 100%;
+  height: 100%; 
+  background: lightblue;
+}
+
+.Chat {
+  width: 100%;
+  height: 100%; 
+  background: pink;
+}
+.FancyBorder {
+  padding: 10px 10px;
+  border: 10px solid;
+}
+
+.FancyBorder-blue {
+  border-color: blue;
+}
+
+.Dialog-title {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.Dialog-message {
+  font-size: larger;
 }
